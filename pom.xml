@@ -20,12 +20,13 @@
         <project.build.outputEncoding>UTF-8</project.build.outputEncoding>
         <maven.compiler.release>17</maven.compiler.release>
         <mainClass>nationalize.Main</mainClass>
+        <feign.version>13.5</feign.version>
     </properties>
     <dependencies>
         <dependency>
             <groupId>io.github.openfeign</groupId>
             <artifactId>feign-gson</artifactId>
-            <version>13.5</version>
+            <version>${feign.version}</version>
             <scope>compile</scope>
         </dependency>
     </dependencies>
@@ -87,7 +88,7 @@
                 <version>3.11.2</version>
                 <configuration>
                     <links>
-                        <link>https://javadoc.io/doc/io.github.openfeign/feign-core/13.5/</link>
+                        <link>https://javadoc.io/doc/io.github.openfeign/feign-core/${feign.version}/</link>
                     </links>
                 </configuration>
             </plugin>
