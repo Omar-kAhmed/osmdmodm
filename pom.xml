@@ -81,6 +81,16 @@
                 <artifactId>maven-jxr-plugin</artifactId>
                 <version>3.6.0</version>
             </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>3.11.2</version>
+                <configuration>
+                    <links>
+                        <link>https://javadoc.io/doc/io.github.openfeign/feign-core/13.5/</link>
+                    </links>
+                </configuration>
+            </plugin>
         </plugins>
     </reporting>
 </project>
