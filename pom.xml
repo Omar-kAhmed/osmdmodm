@@ -90,6 +90,12 @@
                     <links>
                         <link>https://javadoc.io/doc/io.github.openfeign/feign-core/${feign.version}/</link>
                     </links>
+                    <addStylesheets>
+                        <addStylesheet>prism.css</addStylesheet>
+                    </addStylesheets>
+                    <additionalOptions>
+                        <additionalOption>--add-script ${project.basedir}/src/main/javadoc/prism.js</additionalOption>
+                    </additionalOptions>
                 </configuration>
             </plugin>
         </plugins>
